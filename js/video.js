@@ -58,7 +58,7 @@ let volumeLabel = document.querySelector("#volume")
 
 volumeSlider.addEventListener("input", function(){
 	video.volume = parseFloat(volumeSlider.value)/100;
-	volumeLabel.textContent = `Volume is: ${Math.round(video.volume * 100)}%`;
+	volumeLabel.textContent = `${Math.round(video.volume * 100)}%`;
 	console.log("Volume has changed");
 });
 
